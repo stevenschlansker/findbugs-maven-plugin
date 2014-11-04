@@ -521,7 +521,7 @@ class FindbugsViolationCheckMojo extends GroovyMojo {
         log.info('Total bugs: ' + total)
         for (i in 0..total-1) {
           def bug = bugs[i]
-          log.info( bug.LongMessage.text() + FindBugsInfo.BLANK + bug.Class.'@classname' + FindBugsInfo.BLANK + bug.Class.SourceLine.Message.text() )
+          log.info( bug.LongMessage.text() + FindBugsInfo.BLANK + bug.Class.'@classname' + FindBugsInfo.BLANK + bug.SourceLine.Message.text() )
         }
 
 
